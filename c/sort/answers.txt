@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: It works 10 times faster on sorted data and it is not fastes between all three algorithms.
+
+sort2 uses: Merge sort
+
+How do you know?: It works faster on sorted, reversed and random data then other two algorithms.
+
+sort3 uses: Selection sort
+
+How do you know?: It works same speed for all kind of data, but it 5 times slower then sort2.

@@ -1,0 +1,15 @@
+Times:
+
+10 simulations: 0m0.027s
+100 simulations: 0m0.028s
+1000 simulations: 0m0.034s
+10000 simulations: 0m0.092s
+100000 simulations: 0m0.668s
+1000000 simulations: 0m6.485s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?: Brazil and Portugal moved down after increasing simulations to 10000 and above
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: I'd stop on 100000 simulations, it stabilizes results between runnings and difference is close to 0.1%

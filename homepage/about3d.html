@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>3D Printing is cool!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.getElementById('main-navbar');
+
+                navbar.addEventListener('mouseover', function () {
+                    navbar.style.background = 'linear-gradient(45deg, #ee556b, #2a1c21)';
+                });
+
+                navbar.addEventListener('mouseout', function () {
+                    navbar.style.background = 'linear-gradient(45deg, #ff6b6b, #3a1c71)';
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">3D Printing is Cool!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about3d.html"><strong>About 3D Printing</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gettingstarted.html">Getting Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coolprojects.html">Cool Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="about-section" class="container mt-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>About 3D Printing</h2>
+                    <p>
+                        <strong>3D printing</strong>, also known as additive manufacturing, is a revolutionary technology that has transformed the way we conceptualize and produce objects. Unlike traditional manufacturing methods that involve subtracting material from a larger block, <strong>3D printing</strong> builds objects layer by layer from the ground up, using various materials such as plastics, metals, and even organic compounds.
+                    </p>
+                    <p>
+                        The process begins with a digital model of the desired object, created using computer-aided design (<strong>CAD</strong>) software. This digital model is then sliced into thin layers, and the <strong>3D printer</strong> follows these slices, gradually constructing the physical object. This method allows for intricate and customized designs that were once difficult or impossible to achieve with traditional manufacturing techniques.
+                    </p>
+                    <p>
+                        <strong>3D printing</strong> finds applications in a wide range of industries, including healthcare, aerospace, automotive, and consumer goods. It enables rapid prototyping, allowing designers and engineers to quickly iterate and test their ideas. Medical professionals use <strong>3D printing</strong> to create customized implants and prosthetics, while artists and designers use it to bring their imaginative creations to life.
+                    </p>
+                    <p>
+                        One of the key advantages of <strong>3D printing</strong> is its potential for decentralized and on-demand production. This means that products can be manufactured closer to the point of use, reducing the need for large-scale factories and long supply chains. It has the potential to democratize manufacturing, empowering individuals and small businesses to create and innovate without the constraints of mass production.
+                    </p>
+                    <p>
+                        As <strong>3D printing</strong> technology continues to advance, we can expect even more exciting developments in materials, speed, and capabilities. The "<strong>About 3D Printing</strong>" section aims to explore the fascinating world of this transformative technology, providing insights into its history, applications, and the boundless possibilities it presents for the future.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<footer class="bg-dark text-light py-3 mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">Page author: Anton Shtern</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <p class="mb-0">2023 | Purpose: CS50 | Problem Set 8</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History log
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Date and Time</th>
+                <th class="text-start">Action</th>
+                <th class="text-end">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for history_rec in history_records %}
+                <tr>
+                    <td class="text-start">{{ history_rec.dt }}</td>
+                    <td class="text-start">{{ history_rec.action }}</td>
+                    <td class="text-end">{{ history_rec.details }}</td>
+                </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+
+{% endblock %}

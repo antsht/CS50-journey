@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function checkButton(event) {
+
+                let q1 = document.querySelector('#question1');
+                let eventTrigger = event.srcElement;
+                if (eventTrigger.id == 'correct1') {
+                    eventTrigger.style = "background-color: green;"
+                    q1.innerHTML += ' Correct!';
+                } else {
+                    eventTrigger.style = "background-color: red;"
+                    q1.innerHTML += ' Incorrect!';
+                }
+                event.preventDefault();
+            }
+
+            function checkInput(event) {
+                let question2 = document.querySelector('#question2');
+                let answer = document.querySelector('#answer1');
+                if (answer.value == 'Fallout 2') {
+                    question2.innerHTML += ' Correct!';
+                    answer.style.backgroundColor = 'green';
+                } else {
+                    question2.innerHTML += ' Incorrect!';
+                    answer.style.backgroundColor = 'red';
+                }
+                event.preventDefault();
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3 id="question1">What is the best computer game genre?</h3>
+                <form>
+                    <button onclick="checkButton(event)" id="correct1">RPG</button>
+                    <button onclick="checkButton(event)">Top-down shooter</button>
+                    <button onclick="checkButton(event)">Adventure</button>
+                    <button onclick="checkButton(event)">Figting</button>
+                    <button onclick="checkButton(event)">Arcade</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3 id="question2">What is the best computer game ever?</h3>
+                <form>
+                    <input id="answer1" placeholder="the best computer game is..."></input>
+
+                    <button onclick="checkInput(event)">Submit answer</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

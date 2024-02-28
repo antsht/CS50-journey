@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>3D Printing is cool!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbar = document.getElementById('main-navbar');
+
+                navbar.addEventListener('mouseover', function () {
+                    navbar.style.background = 'linear-gradient(45deg, #ee556b, #2a1c21)';
+                });
+
+                navbar.addEventListener('mouseout', function () {
+                    navbar.style.background = 'linear-gradient(45deg, #ff6b6b, #3a1c71)';
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">3D Printing is Cool!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about3d.html">About 3D Printing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gettingstarted.html">Getting Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coolprojects.html">Cool Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html"><strong>Resources</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="resources-section" class="container mt-4">
+            <h2>3D Printing Resources</h2>
+            <p>
+                Explore these valuable resources to enhance your knowledge and skills in the exciting world of <strong>3D printing</strong>:
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Resource</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td><a href="https://www.3dhubs.com/" target="_blank"><strong>3D Hubs</strong></a></td>
+                            <td>Connect with local 3D printing services and get your designs printed by professionals.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><a href="https://www.thingiverse.com/" target="_blank"><strong>Thingiverse</strong></a></td>
+                            <td>Discover a vast collection of downloadable 3D models and share your creations with the community.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td><a href="https://www.tinkercad.com/" target="_blank"><strong>Tinkercad</strong></a></td>
+                            <td>Learn 3D modeling with this user-friendly online tool suitable for beginners and educators.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+<footer class="bg-dark text-light py-3 mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">Page author: Anton Shtern</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <p class="mb-0">2023 | Purpose: CS50 | Problem Set 8</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+
+    </body>
+</html>
